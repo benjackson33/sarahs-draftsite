@@ -17,6 +17,7 @@
     background-attachment: fixed;
     background-position: center center;
     background-color: black;
+    overflow: hidden;
   }
   
   .title {
