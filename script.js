@@ -1,4 +1,8 @@
 const btn = document.querySelector('.font-btn');
+const titleDiv = document.querySelector('.title')
+const whichFont = document.createElement('p') 
+
+
 const fonts = [
   'Cardo, serif',
   'Castoro, serif',
@@ -21,7 +25,9 @@ const handleClick = (e) => {
   // Apply the selected font to an element (you need to specify the element)
   const title = document.querySelector('.title'); // Replace with the actual target element
   title.style.fontFamily = fonts[btnClicks];
-  console.log(fonts[btnClicks]);
+  whichFont.textContent = fonts[btnClicks]
+  titleDiv.appendChild(whichFont)
+//   console.log(fonts[btnClicks]);
 };
 
 btn.addEventListener('click', handleClick);
